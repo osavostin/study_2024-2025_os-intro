@@ -1,0 +1,139 @@
+---
+## Front matter
+title: "Лабораторная работа №9"
+subtitle: "Дисциплина: Операционные системы"
+author: "Савостин Олег"
+
+## Generic otions
+lang: ru-RU
+toc-title: "Содержание"
+
+## Bibliography
+bibliography: bib/cite.bib
+csl: pandoc/csl/gost-r-7-0-5-2008-numeric.csl
+
+## Pdf output format
+toc: true # Table of contents
+toc-depth: 2
+lof: true # List of figures
+lot: true # List of tables
+fontsize: 12pt
+linestretch: 1.5
+papersize: a4
+documentclass: scrreprt
+## I18n polyglossia
+polyglossia-lang:
+  name: russian
+  options:
+	- spelling=modern
+	- babelshorthands=true
+polyglossia-otherlangs:
+  name: english
+## I18n babel
+babel-lang: russian
+babel-otherlangs: english
+## Fonts
+mainfont: IBM Plex Serif
+romanfont: IBM Plex Serif
+sansfont: IBM Plex Sans
+monofont: IBM Plex Mono
+mathfont: STIX Two Math
+mainfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
+romanfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
+sansfontoptions: Ligatures=Common,Ligatures=TeX,Scale=MatchLowercase,Scale=0.94
+monofontoptions: Scale=MatchLowercase,Scale=0.94,FakeStretch=0.9
+mathfontoptions:
+## Biblatex
+biblatex: true
+biblio-style: "gost-numeric"
+biblatexoptions:
+  - parentracker=true
+  - backend=biber
+  - hyperref=auto
+  - language=auto
+  - autolang=other*
+  - citestyle=gost-numeric
+## Pandoc-crossref LaTeX customization
+figureTitle: "Рис."
+tableTitle: "Таблица"
+listingTitle: "Листинг"
+lofTitle: "Список иллюстраций"
+lotTitle: "Список таблиц"
+lolTitle: "Листинги"
+## Misc options
+indent: true
+header-includes:
+  - \usepackage{indentfirst}
+  - \usepackage{float} # keep figures where there are in the text
+  - \floatplacement{figure}{H} # keep figures where there are in the text
+---
+
+
+# Цель работы
+
+Целью данной работы является освоение Midnight Commander.
+
+# Задание
+
+1. Midnight Commander
+2. Midnight Commander встроенный текстовый редактор
+
+# Теоретическое введение
+
+Командная оболочка — интерфейс взаимодействия пользователя с операционной систе-
+мой и программным обеспечением посредством команд.
+Midnight Commander (или mc) — псевдографическая командная оболочка для UNIX/Linux
+систем. Для запуска mc необходимо в командной строке набрать mc и нажать Enter .
+Рабочее пространство mc имеет две панели, отображающие по умолчанию списки
+файлов двух каталогов.
+
+Панель в mc отображает список файлов текущего каталога. Абсолютный путь к этому
+каталогу отображается в заголовке панели. У активной панели заголовок и одна из её
+строк подсвечиваются. Управление панелями осуществляется с помощью определённых
+комбинаций клавиш или пунктов меню mc.
+Панели можно поменять местами. Для этого и используется комбинация клавиш Ctrl-u
+или команда меню mc Переставить панели . Также можно временно убрать отображение
+панелей (отключить их) с помощью комбинации клавиш Ctrl-o или команды меню mc
+Отключить панели . Это может быть полезно, например, если необходимо увидеть вывод
+какой-то информации на экран после выполнения какой-либо команды shell.
+С помощью последовательного применения комбинации клавиш Ctrl-x d есть
+возможность сравнения каталогов, отображённых на двух панелях. Панели могут допол-
+нительно быть переведены в один из двух режимов: Информация или Дерево . В режиме
+Информация (рис. 7.2) на панель выводятся сведения о файле и текущей файловой системе,
+расположенных на активной панели. В режиме Дерево (рис. 7.3) на одной из панелей
+выводится структура дерева каталогов.
+Управлять режимами отображения панелей можно через пункты меню mc Правая панель
+и Левая панель (рис. 7.4)
+
+
+# Выполнение лабораторной работы
+
+Изучаю информацию о mc (рис. [-@fig:001]).
+
+![Информация о мс](image/1.png){#fig:001 width=70%}
+
+Изучаю мс в терминале (рис. [-@fig:002]).
+
+![МС в терминале](image/2.png){#fig:002 width=70%}
+
+Выполняю команды в мс(рис. [-@fig:003]) (рис. [-@fig:004]).
+
+![Меню пользователя](image/3.png){#fig:003 width=70%}
+
+![Перемещение файла](image/4.png){#fig:004 width=70%}
+
+Проверяю левую панель. Всё подробно (рис. [-@fig:005]).
+
+![](image/5.png){#fig:005 width=70%}
+
+
+
+
+# Выводы
+
+Здесь кратко описываются итоги проделанной работы.
+
+# Список литературы{.unnumbered}
+
+::: {#refs}
+:::
